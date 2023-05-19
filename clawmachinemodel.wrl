@@ -1,0 +1,584 @@
+#VRML V2.0 utf8
+
+#Created with V-Realm Builder v2.0
+#Integrated Data Systems Inc.
+#www.ids-net.com
+
+
+DEF pen4 Transform {
+	translation	3.233 -2.9632 0
+	rotation	0 0 -1  2.53073
+	children [ 
+	    Shape {
+		    appearance	Appearance {
+			    material	Material {
+			    }
+
+		    }
+
+		    geometry	Cylinder {
+			    height	0.55
+			    radius	0.06
+		    }
+
+	    }
+
+	    DEF pen1cone Transform {
+		    translation	0 0.322 0
+		    children Shape {
+			    appearance	Appearance {
+				    material	Material {
+				    }
+
+			    }
+
+			    geometry	Cone {
+				    bottomRadius	0.06
+				    height	0.1
+			    }
+
+		    }
+	    }
+	]
+}
+DEF pen3 Transform {
+	translation	2 1.8 0
+	children [ 
+	    Shape {
+		    appearance	Appearance {
+			    material	Material {
+			    }
+
+		    }
+
+		    geometry	Cylinder {
+			    height	0.55
+			    radius	0.06
+			    bottom	TRUE
+		    }
+
+	    }
+
+	    DEF pen1cone Transform {
+		    translation	0 0.322 0
+		    children Shape {
+			    appearance	Appearance {
+				    material	Material {
+				    }
+
+			    }
+
+			    geometry	Cone {
+				    bottomRadius	0.06
+				    height	0.1
+			    }
+
+		    }
+	    }
+	]
+}
+DEF pen2 Transform {
+	translation	1.8 3.71 0
+	children [ 
+	    Shape {
+		    appearance	Appearance {
+			    material	Material {
+			    }
+
+		    }
+
+		    geometry	Cylinder {
+			    height	0.55
+			    radius	0.06
+		    }
+
+	    }
+
+	    DEF pen1cone Transform {
+		    translation	0 0.322 0
+		    children Shape {
+			    appearance	Appearance {
+				    material	Material {
+				    }
+
+			    }
+
+			    geometry	Cone {
+				    bottomRadius	0.06
+				    height	0.1
+			    }
+
+		    }
+	    }
+	]
+}
+DEF pen1 Transform {
+	translation	-1.0358 3.4397 0
+	rotation	0 0 1  0.523599
+	children [ 
+	    Shape {
+		    appearance	Appearance {
+			    material	Material {
+			    }
+
+		    }
+
+		    geometry	Cylinder {
+			    height	0.55
+			    radius	0.06
+		    }
+
+	    }
+
+	    DEF pen1cone Transform {
+		    translation	0 0.322 0
+		    children Shape {
+			    appearance	Appearance {
+				    material	Material {
+				    }
+
+			    }
+
+			    geometry	Cone {
+				    bottomRadius	0.06
+				    height	0.1
+			    }
+
+		    }
+	    }
+	]
+}
+DEF ball3 Transform {
+	translation	2 1.8 0
+	children Shape {
+		appearance	Appearance {
+			material	Material {
+				ambientIntensity	1
+				diffuseColor	0.61 0.0485524 0.0842426
+				shininess	0
+			}
+
+		}
+
+		geometry	Sphere {
+			radius	0.35
+		}
+
+	}
+}
+DEF ball2 Transform {
+	translation	1.8 3.71 0
+	children Shape {
+		appearance	Appearance {
+			material	Material {
+				ambientIntensity	1
+				diffuseColor	0.61 0.0373469 0.0373469
+				shininess	0
+			}
+
+		}
+
+		geometry	Sphere {
+			radius	0.35
+		}
+
+	}
+}
+DEF ball1 Transform {
+	translation	-1.0358 3.4397 0
+	children Shape {
+		appearance	Appearance {
+			material	Material {
+				ambientIntensity	1
+				diffuseColor	0.69 0.0403969 0.0134952
+				shininess	0
+			}
+
+		}
+
+		geometry	Sphere {
+			radius	0.35
+		}
+
+	}
+}
+DEF ball4 Transform {
+	translation	3.2995 -2.9592 0
+	children Shape {
+		appearance	Appearance {
+			material	Material {
+				ambientIntensity	1
+				diffuseColor	0.69 0.0777801 0.0104244
+				shininess	0
+			}
+
+		}
+
+		geometry	Sphere {
+			radius	0.35
+		}
+
+	}
+}
+DEF base Transform {
+	translation	0 0 0
+	rotation	0 0 -1  1.5708
+	children [ 
+	    Shape {
+		    appearance	Appearance {
+			    material	Material {
+				    ambientIntensity	0
+				    diffuseColor	0.6 0.6 0.6
+				    shininess	0
+			    }
+
+		    }
+
+		    geometry	Cylinder {
+			    height	0.2
+			    radius	1.06
+		    }
+
+	    }
+
+	    DEF basesphere Transform {
+		    translation	0 0.16 0
+		    children [ 
+			Shape {
+				appearance	Appearance {
+					material	Material {
+						ambientIntensity	0.2
+						diffuseColor	0.0907526 0.414121 0.86
+						shininess	0
+					}
+
+				}
+
+				geometry	Sphere {
+					radius	0.25
+				}
+
+			}
+
+			DEF shoulderjoint Transform {
+				translation	0 0.216 0
+				children [ 
+				    Shape {
+					    appearance	Appearance {
+						    material	Material {
+							    ambientIntensity	0
+							    diffuseColor	0.0949736 0.433382 0.9
+							    shininess	0
+						    }
+
+					    }
+
+					    geometry	Sphere {
+						    radius	0.25
+					    }
+
+				    }
+
+				    DEF shoulder Transform {
+					    translation	0 0.872 0
+					    children [ 
+						Shape {
+							appearance	Appearance {
+								material	Material {
+									ambientIntensity	0.1
+									diffuseColor	1 1 1
+									shininess	0.5
+									specularColor	1 1 1
+								}
+
+							}
+
+							geometry	Cylinder {
+								height	1.6
+								radius	0.25
+							}
+
+						}
+
+						DEF elbowjoint Transform {
+							translation	0 0.824 0
+							children [ 
+							    Shape {
+								    appearance	Appearance {
+									    material	Material {
+										    ambientIntensity	0.2
+										    diffuseColor	0.0573671 0.387335 0.8
+										    shininess	0
+									    }
+
+								    }
+
+								    geometry	Sphere {
+									    radius	0.29
+								    }
+
+							    }
+
+							    DEF elbow Transform {
+								    translation	0 0.976 0
+								    children [ 
+									Shape {
+										appearance	Appearance {
+											material	Material {
+												ambientIntensity	0.1
+												diffuseColor	1 1 1
+												specularColor	1 1 1
+											}
+
+										}
+
+										geometry	Cylinder {
+											height	1.6
+											radius	0.235
+										}
+
+									}
+
+									DEF clawjoint Transform {
+										translation	0 0.782 0
+										children [ 
+										    Shape {
+											    appearance	Appearance {
+												    material	Material {
+													    ambientIntensity	0.2
+													    diffuseColor	0.0384063 0.40697 0.8
+													    shininess	0
+												    }
+
+											    }
+
+											    geometry	Sphere {
+												    radius	0.23
+											    }
+
+										    }
+
+										    DEF upclawbasejoint Transform {
+											    translation	-0.161 0.136997 -3.8743e-007
+											    rotation	0 0 1  0.523599
+											    scale	0.999999 0.999999 1
+											    children [ 
+												Shape {
+													appearance	Appearance {
+														material	Material {
+															ambientIntensity	0.2
+															diffuseColor	0.441931 0.520422 0.8
+															shininess	0
+														}
+
+													}
+
+													geometry	Sphere {
+														radius	0.1
+													}
+
+												}
+
+												DEF up Transform {
+													translation	-0.106509 0.131933 -1.89023e-007
+													rotation	0 0 1  0.698132
+													children [ 
+													    Shape {
+														    appearance	Appearance {
+															    material	Material {
+															    }
+
+														    }
+
+														    geometry	Cylinder {
+															    height	0.3
+															    radius	0.1
+														    }
+
+													    }
+
+													    DEF upjoint1 Transform {
+														    translation	0 0.126 0
+														    children [ 
+															Shape {
+																appearance	Appearance {
+																	material	Material {
+																		ambientIntensity	1
+																		diffuseColor	0.37 0.37 0.37
+																		shininess	0
+																	}
+
+																}
+
+																geometry	Sphere {
+																	radius	0.096
+																}
+
+															}
+
+															DEF up2 Transform {
+																translation	0.135 0.115 0
+																rotation	0 0 -1  1.0472
+																children [ 
+																    Shape {
+																	    appearance	Appearance {
+																		    material	Material {
+																		    }
+
+																	    }
+
+																	    geometry	Cylinder {
+																		    height	0.3
+																		    radius	0.07
+																	    }
+
+																    }
+
+																    DEF uptip Transform {
+																	    translation	0 0.133 0
+																	    children Shape {
+																		    appearance	Appearance {
+																			    material	Material {
+																			    }
+
+																		    }
+
+																		    geometry	Sphere {
+																			    radius	0.068
+																		    }
+
+																	    }
+																    }
+																]
+															}
+														    ]
+													    }
+													]
+												}
+											    ]
+										    }
+
+										    DEF downclawbasejoint Transform {
+											    translation	0.161 0.137 0
+											    rotation	0 0 -1  0.523599
+											    children [ 
+												Shape {
+													appearance	Appearance {
+														material	Material {
+															ambientIntensity	0.2
+															diffuseColor	0.565408 0.654463 0.83
+															shininess	0
+														}
+
+													}
+
+													geometry	Sphere {
+														radius	0.09
+													}
+
+												}
+
+												DEF down Transform {
+													translation	0.1065 0.1319 0
+													rotation	0 0 -1  0.698132
+													children [ 
+													    Shape {
+														    appearance	Appearance {
+															    material	Material {
+															    }
+
+														    }
+
+														    geometry	Cylinder {
+															    height	0.3
+															    radius	0.1
+														    }
+
+													    }
+
+													    DEF downjoint1 Transform {
+														    translation	0 0.126 0
+														    children [ 
+															Shape {
+																appearance	Appearance {
+																	material	Material {
+																		ambientIntensity	1
+																		diffuseColor	0.329777 0.336258 0.4
+																		shininess	0
+																	}
+
+																}
+
+																geometry	Sphere {
+																	radius	0.096
+																}
+
+															}
+
+															DEF down2 Transform {
+																translation	-0.135 0.115 0
+																rotation	0 0 1  1.0472
+																children [ 
+																    Shape {
+																	    appearance	Appearance {
+																		    material	Material {
+																		    }
+
+																	    }
+
+																	    geometry	Cylinder {
+																		    height	0.3
+																		    radius	0.07
+																	    }
+
+																    }
+
+																    DEF downtip Transform {
+																	    translation	0 0.133 0
+																	    children Shape {
+																		    appearance	Appearance {
+																			    material	Material {
+																			    }
+
+																		    }
+
+																		    geometry	Sphere {
+																			    radius	0.068
+																		    }
+
+																	    }
+																    }
+																]
+															}
+														    ]
+													    }
+													]
+												}
+											    ]
+										    }
+										]
+									}
+								    ]
+							    }
+							]
+						}
+					    ]
+				    }
+				]
+			}
+		    ]
+	    }
+	]
+}
+Background {
+	groundAngle	[ 0.9, 1.5, 1.57 ]
+	groundColor	[ 0.450597 0.8 0.493721,
+			  0.174249 0.82 0.187362,
+			  0.467223 0.82 0.445801,
+			  0.621997 0.67 0.600279 ]
+	skyAngle	[ 0.1, 1.2, 1.57 ]
+	skyColor	[ 0.702344 0.8 0.63592,
+			  0.277798 0.219779 0.7,
+			  0.222549 0.390234 0.7,
+			  0.60094 0.662637 0.69 ]
+}
